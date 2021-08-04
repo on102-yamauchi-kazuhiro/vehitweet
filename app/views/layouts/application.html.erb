@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>VehiTweet</title>
+    <title>AutoTweet</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -12,16 +12,17 @@
   <body>
     <header class="header">
       <div class="header__bar row">
-        <h1 class="grid-6"><a href="/">PicTweet</a></h1>
+        <h1 class="grid-6"><a href="/">AutoTweet</a></h1>
         <div class="user_nav grid-6">
           <a class="post" href="/tweets/new">投稿する</a>
         </div>
       </div>
+      <p>あなたのとっておきの乗り物の<br>写真を投稿しよう！</p>
     </header>
     <%= yield %>
     <footer>
       <p>
-        Copyright VehiTweet 2021.
+        Copyright AutoTweet 2021.
       </p>
     </footer>
   </body>
