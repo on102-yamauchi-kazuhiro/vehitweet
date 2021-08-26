@@ -3,7 +3,6 @@
   <%= form.submit "検索", class: "search-btn" %>
 <% end %>
 <div class="contents row">
-<p>好きな乗り物の画像を投稿しよう！</p>
   <% @tweets.each do |tweet| %>
     <%= render partial: "tweet", locals: { tweet: tweet } %>
   <% end %>
